@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "damage-indicator",
+  "version": "${version}",
+  "name": "Damage Indicator",
+  "description": "Highlights entities when they take damage",
+  "authors": ["YourName"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.damageindicator.DamageIndicatorClient"
+    ]
+  },
+  "mixins": [
+    "damage-indicator.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.21.11",
+    "fabric-api": ">=0.105.0"
+  }
+}
